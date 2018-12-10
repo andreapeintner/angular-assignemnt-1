@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+  showParagraph = false
+  log = []
+
+  toggleButton() {
+    this.showParagraph = !this.showParagraph
+    this.log.push(this.log.length + 1)
+  }
 }
